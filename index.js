@@ -1,6 +1,6 @@
 var body = document.firstElementChild;
-var setImage1 = document.querySelector(".img1");
-var setImage2 = document.querySelector(".img2");
+var setImage1 = document.querySelector(".diceCSS");
+var setImage2 = document.querySelector(".dice2CSS");
 var one2six1 = randomNumber1();
 var one2six2 = randomNumber2();
 
@@ -39,21 +39,69 @@ function randomNumber2 (){
 
 
 function image1Select (one2six){
-   if (one2six === 1){ setImage1.setAttribute("src","./images/dice1.png");}
-    else if (one2six === 2){    setImage1.setAttribute("src","./images/dice2.png");}
-    else if (one2six === 3){    setImage1.setAttribute("src","./images/dice3.png");}
-    else if (one2six === 4){    setImage1.setAttribute("src","./images/dice4.png");}
-    else if (one2six === 5){    setImage1.setAttribute("src","./images/dice5.png");}
-    else {    setImage1.setAttribute("src","./images/dice6.png");}
+   if (one2six === 1){ 
+    document.querySelector("#five").classList.add("on");}
+    else if (one2six === 2){
+        document.querySelector("#two").classList.add("on");
+        document.querySelector("#eight").classList.add("on");
+    }else if (one2six === 3){
+        document.querySelector("#two").classList.add("on");
+        document.querySelector("#five").classList.add("on");
+        document.querySelector("#eight").classList.add("on");
+    }else if (one2six === 4){
+        document.querySelector("#one").classList.add("on");
+        document.querySelector("#three").classList.add("on");
+        document.querySelector("#seven").classList.add("on");
+        document.querySelector("#nine").classList.add("on");
+    }
+    else if (one2six === 5){
+        document.querySelector("#one").classList.add("on");
+        document.querySelector("#three").classList.add("on");
+        document.querySelector("#five").classList.add("on");
+        document.querySelector("#seven").classList.add("on");
+        document.querySelector("#nine").classList.add("on");
+    }
+    else{
+        document.querySelector("#one").classList.add("on");
+        document.querySelector("#three").classList.add("on");
+        document.querySelector("#four").classList.add("on");
+        document.querySelector("#six").classList.add("on");
+        document.querySelector("#seven").classList.add("on");
+        document.querySelector("#nine").classList.add("on");
+    }
 }
 
 function image2Select (one2six){
-    if (one2six === 1){ setImage2.setAttribute("src","./images/dice1.png");}
-     else if (one2six === 2){    setImage2.setAttribute("src","./images/dice2.png");}
-     else if (one2six === 3){    setImage2.setAttribute("src","./images/dice3.png");}
-     else if (one2six === 4){    setImage2.setAttribute("src","./images/dice4.png");}
-     else if (one2six === 5){    setImage2.setAttribute("src","./images/dice5.png");}
-     else {    setImage2.setAttribute("src","./images/dice6.png");}
+    if (one2six === 1){ 
+        document.querySelector("#five2").classList.add("on");}
+        else if (one2six === 2){
+            document.querySelector("#two2").classList.add("on");
+            document.querySelector("#eight2").classList.add("on");
+        }else if (one2six === 3){
+            document.querySelector("#two2").classList.add("on");
+            document.querySelector("#five2").classList.add("on");
+            document.querySelector("#eight2").classList.add("on");
+        }else if (one2six === 4){
+            document.querySelector("#one2").classList.add("on");
+            document.querySelector("#three2").classList.add("on");
+            document.querySelector("#seven2").classList.add("on");
+            document.querySelector("#nine2").classList.add("on");
+        }
+        else if (one2six === 5){
+            document.querySelector("#one2").classList.add("on");
+            document.querySelector("#three2").classList.add("on");
+            document.querySelector("#five2").classList.add("on");
+            document.querySelector("#seven2").classList.add("on");
+            document.querySelector("#nine2").classList.add("on");
+        }
+        else{
+            document.querySelector("#one2").classList.add("on");
+            document.querySelector("#three2").classList.add("on");
+            document.querySelector("#four2").classList.add("on");
+            document.querySelector("#six2").classList.add("on");
+            document.querySelector("#seven2").classList.add("on");
+            document.querySelector("#nine2").classList.add("on");
+        }
 }
 
 // function outcomeMessage (one2six1,one2six2){

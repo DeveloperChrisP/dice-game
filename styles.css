@@ -1,3 +1,11 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root{
+  --diceDotColour:rgb(237, 248, 217);
+}
+
 .container {
   width: 70%;
   margin: auto;
@@ -61,4 +69,29 @@ footer {
   text-align: center;
   font-family: 'Indie Flower', cursive;
 
+}
+
+.diceCSS {
+  display: grid;
+  
+
+  gap:20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  height:210px;
+  width:210px;
+  background-color: #7D0A0A;
+  border-radius: 20px;
+  padding:20px 30px;
+}
+
+
+.diceCSS div{
+  
+  /*margin:12px;*/
+  border-radius: 50%;
+  
+}
+
+.diceCSS .on{
+  background-color: var(--diceDotColour);
 }
