@@ -15,7 +15,7 @@
 .dice {
   text-align: center;
   display: inline-block;
-
+  
 }
 
 body {
@@ -34,6 +34,12 @@ p {
   font-size: 2rem;
   color: #4ECCA3;
   font-family: 'Indie Flower', cursive;
+  width: 210px;
+  margin:auto;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+  text-wrap:wrap;
+  
 }
 
 img {
@@ -44,7 +50,7 @@ button {
   height: fit-content;
   width: fit-content%;
   display: block;
-  margin-top: 4rem;
+  margin-top: 5rem;
   left:50%;
   transform: translate(-50%, -50%);
   font-family: inherit;
@@ -62,6 +68,10 @@ button:is(:hover, :focus){
   background-color: #040b09;
   cursor: pointer;
 }
+p:is(:hover, :focus){
+  
+  cursor: pointer;
+}
 
 footer {
   margin-top: 5%;
@@ -74,7 +84,7 @@ footer {
 .diceCSS {
   display: grid;
   
-
+  
   gap:20px;
   grid-template-columns: 1fr 1fr 1fr;
   height:210px;
@@ -83,7 +93,12 @@ footer {
   border-radius: 20px;
   padding:20px 30px;
 }
-
+.diceCSS:is(:hover,:focus){
+  cursor:grab;
+}
+.diceCSSgrabbed:is(:hover,:focus){
+  cursor:grabbing;
+}
 
 .diceCSS div{
   
